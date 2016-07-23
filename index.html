@@ -1,0 +1,59 @@
+<DOCTYPE! html>
+<html>
+<head>
+<title>EmptyResearch's Site</title>
+<style>
+
+</style>
+</head>
+<body>
+<div class="Menu">
+  <style>
+  body {
+    font-family: tahoma;
+    background: #AFDDD2;
+  }
+  div.Button {
+    background: #DAD5DD; border: 3px solid #EA8466; border-radius: 8px; width:100px; height: 40px; position: relative; 
+  }  
+  p.Button-Text {
+    position: relative;top:-5px;text-align: center; color: #EA8466;text-decoration:none;
+  }
+  div.Menu {
+    text-align: center;
+  }
+  a {
+   text-decoration: none;
+  } 
+  </style>
+  <strong><h1 style="color:#EA8466;text-align:center;"> EmptyResearch - Welcome to my site!</h1></strong>
+  <p style="color:#EA8466;text-align:center;font-size:12px;">(Note: This site was built for 1366 * 768 screens. If this site doesn't display properly, try setting your resolution to anything 16:9. My CSS skills are quite limited, so I'm still trying to find a way to fix this.)</p>
+  <a class="Menu" href="http://emptyresearch.github.io/about">
+  <div class="Button" style="top:10px;left:470px;"><p class="Button-Text">About</p></div>
+  </a>
+  <a class="Menu" href="http://emptyresearch.github.io/games">
+  <div class="Button" style="top:-36px;left:610px;"><p class="Button-Text">Games</p></div>
+  </a>
+  <a class="Menu" href="http://emptyresearch.github.io/tutorials">
+  <div class="Button" style="top:-82px;left:750px;"><p style="font-size:12px;"class="Button-Text">Tutorials (Coming Soon!)</p></div>  
+  </a>
+</div>  <div style="color:#ea8466;">
+<h1 style="color:#EA8466;border-style: none none solid none;border-color: #EA8466;">Lesson 0.1: Setting up a C++ Source File</h1>
+<h2> What is C++? </h2>
+<p class="Tutorial" style="color:#EA8466">&nbsp;&nbsp;&nbsp;&nbsp;C++ is a low-level programming language, usually used for simple input/output and object-oriented programs. Though it was designed for small tasks, you can import images and more complex functions with external libraries (I use <a href="http://opencv.org/about.html" target="_blank">OpenCV</a>). In this lesson, you will learn how to set up a basic C++ file, download a compiler, and export/save an exe on your computer. </p>
+<h2> Downloading a Compiler </h2>
+<p class="Tutorial" style="color:#EA8466">&nbsp;&nbsp;&nbsp;&nbsp;If you want to download a compiler, but you don't have a specific compiler in mind, then you should read this section. Otherwise, you can skip it. <br><br>&nbsp;&nbsp;&nbsp;&nbsp;I like to sort compilers into three main categories: online, basic offline, and advanced offline compilers. If you are new to C++, and you don't need to export an exe for your projects, then try <a href="http://cppshell.com">C++ Shell</a>. It's a very basic, online compiler that compiles almost instantly. However, you can only create single-file C++ programs, and you can't export an exe. <br> <br> &nbsp;&nbsp;&nbsp;&nbsp;When you think you're ready for something more than C++ Shell, and you want a debugger, the ability to export an exe, and you want to create C++ projects with multiple files, try <a href="http://codecutter.net/tools/quincy">Quincy</a>. Though a very simple IDE, it has a debugger, a builder (for exporting exes) , and it lets you create multiple files for one C++ project. It may look a little B-grade, but it does the job well.<br><br>&nbsp;&nbsp;&nbsp;&nbsp;If you're ready to move on to the next level, which even I am not, then I recommend getting <a href="http://www.visualstudio.com/features/cplusplus">Visual Studio</a>. I don't know much about Visual Studio, but I do know that it was created by Microsoft, and it builds (creates an exe and runs the program) extremely fast. </p>
+<h2>Setting up a C++ File</h2>
+<p class="Tutorials" style="color=:#EA8466;">&nbsp;&nbsp;&nbsp;&nbsp;Every C++ File stars with an <code>#include &lt;something&gt;</code> statement. Each statement does not end with a semicolon (;), and must be written on its own line. The most vital #include statement you will see (it's pretty much in every file) is <code>#include &lt;iostream&gt;</code>. It's an abbreviation for "input output stream", and it provides four very useful functions: std::cout, std::cin, std::cerr, std::clog. <br><br>&nbsp;&nbsp;&nbsp;&nbsp;You might be wondering why they all start with "std::". This called the standard namespace, and most of the time you use these four functions, you'll be using std:: before each one. That's why you might see this phrase in a lot of C++ files: <code>using namespace std;</code>. This statement makes sure that all functions are <code>"std::function"</code>, so you don't have to keep typing <code> std:: </code> all the time. The only problem with this statement is that every time you have to use a function that is in your own namespace (discussed later), you have to type <code> using namespace myNamespace; myFunction; using namespace std; </code> to switch namespaces.  <br><br>&nbsp;&nbsp;&nbsp;&nbsp;The last vital statement in a C++ file is <code>int main(){}</code>. Everything going on inside a program (besides defining variables, functions, arrays, etc.) must be inside that {}s of <code>int main(){};</code> We'll discuss it in more detail later when we learn about functions.  </p>
+<h2>Summary</h2>
+<ul>
+<li> Use a compiler that's right for you (basic: <a href="http://cppshell.com">C++ Shell</a>, intermediate:<a href="http://codecutter.net/tools/quincy"> Quincy</a>, advanced: <a href="https://www.visualstudio.com/features/cplusplus">Visual Studio</a>).</li>
+<li> Include <code> #include &lt;iostream&gt; </code> in almost every program you write. </li>
+<li> Include <code> using namespace std; </code> inside of int main, but not in any other functions. </li>
+<li> Most code should be inide <code> int main() {put your code here} </code>, except for function definition, and #include statements. </li>
+</ul>
+</div>
+
+  
+</body>  
+</html>
